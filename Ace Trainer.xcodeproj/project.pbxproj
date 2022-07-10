@@ -11,6 +11,10 @@
 		CE4A9C22287ABD0F002FD4A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A9C21287ABD0F002FD4A7 /* ContentView.swift */; };
 		CE4A9C24287ABD11002FD4A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4A9C23287ABD11002FD4A7 /* Assets.xcassets */; };
 		CE4A9C27287ABD11002FD4A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4A9C26287ABD11002FD4A7 /* Preview Assets.xcassets */; };
+		CE4A9C38287ABE33002FD4A7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A9C37287ABE33002FD4A7 /* LoginView.swift */; };
+		CE4A9C3A287AC553002FD4A7 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A9C39287AC553002FD4A7 /* AuthHeaderView.swift */; };
+		CE4A9C3D287AC7A5002FD4A7 /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A9C3C287AC7A5002FD4A7 /* RoundedShape.swift */; };
+		CE4A9C3F287ACF8A002FD4A7 /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A9C3E287ACF8A002FD4A7 /* CustomInputField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		CE4A9C21287ABD0F002FD4A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE4A9C23287ABD11002FD4A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE4A9C26287ABD11002FD4A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE4A9C37287ABE33002FD4A7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CE4A9C39287AC553002FD4A7 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
+		CE4A9C3C287AC7A5002FD4A7 /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
+		CE4A9C3E287ACF8A002FD4A7 /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,9 @@
 		CE4A9C1E287ABD0F002FD4A7 /* Ace Trainer */ = {
 			isa = PBXGroup;
 			children = (
+				CE4A9C33287ABDEF002FD4A7 /* Model */,
+				CE4A9C2D287ABD1B002FD4A7 /* Core */,
+				CE4A9C2F287ABD46002FD4A7 /* Service */,
 				CE4A9C1F287ABD0F002FD4A7 /* Ace_TrainerApp.swift */,
 				CE4A9C21287ABD0F002FD4A7 /* ContentView.swift */,
 				CE4A9C23287ABD11002FD4A7 /* Assets.xcassets */,
@@ -65,6 +76,63 @@
 				CE4A9C26287ABD11002FD4A7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE4A9C2D287ABD1B002FD4A7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CE4A9C3B287AC774002FD4A7 /* Components */,
+				CE4A9C34287ABE0A002FD4A7 /* Authentication */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CE4A9C2F287ABD46002FD4A7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CE4A9C33287ABDEF002FD4A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE4A9C34287ABE0A002FD4A7 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				CE4A9C39287AC553002FD4A7 /* AuthHeaderView.swift */,
+				CE4A9C35287ABE17002FD4A7 /* Views */,
+				CE4A9C36287ABE1D002FD4A7 /* ViewModel */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		CE4A9C35287ABE17002FD4A7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE4A9C37287ABE33002FD4A7 /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE4A9C36287ABE1D002FD4A7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE4A9C3B287AC774002FD4A7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CE4A9C3C287AC7A5002FD4A7 /* RoundedShape.swift */,
+				CE4A9C3E287ACF8A002FD4A7 /* CustomInputField.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +205,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4A9C3D287AC7A5002FD4A7 /* RoundedShape.swift in Sources */,
+				CE4A9C38287ABE33002FD4A7 /* LoginView.swift in Sources */,
+				CE4A9C3A287AC553002FD4A7 /* AuthHeaderView.swift in Sources */,
 				CE4A9C22287ABD0F002FD4A7 /* ContentView.swift in Sources */,
+				CE4A9C3F287ACF8A002FD4A7 /* CustomInputField.swift in Sources */,
 				CE4A9C20287ABD0F002FD4A7 /* Ace_TrainerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
