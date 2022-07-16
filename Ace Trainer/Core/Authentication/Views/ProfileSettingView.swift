@@ -13,34 +13,63 @@ struct ProfileSettingView: View {
     @State private var jobs = ""
     @State private var sports = ""
     @State private var caption = ""
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         VStack{
-            HStack(spacing: 10){
+            AuthHeaderView(title1: "Edit", title2: "Account Settings")
+                .clipShape(RoundedShape(corners: .bottomRight))
+            
+            VStack(alignment: .leading,spacing: 30){
                 Image(systemName: "person")
                     .resizable()
                     .scaledToFill()
                     .clipShape(Circle())
+                    .foregroundColor(Color(.darkGray))
                     .frame(width: 50, height: 50)
-                TextField("name",text: $name)
-            }
-            .padding()
 
-            VStack(alignment: .leading,spacing: 12){
-                Text("■ Jobs")
+
+                Text("Name")
+                    .font(.headline)
+                TextField("Type your name",text: $name)
+                
+                Text("Jobs")
                     .font(.headline)
                 TextField("Type your jobs",text: $jobs)
-            
-                Text("■ Sports")
+                
+                Text("Sports")
                     .font(.headline)
                 TextField("Type your sport",text: $sports)
                 
-                Text("■ Skill")
+                Text("Skill")
                     .font(.headline)
                 TextArea(text: $caption, placeholder: "Type your skills")
             }
             .padding()
+            
+            HStack{
+                Button {
+                    dismiss()
+                } label: {
+                    Text("Cancel")
+                }
+                Spacer()
+                
+                Button {
+                    //done
+                } label: {
+                    Text("Complete")
+                        .bold()
+                        .padding(.horizontal)
+                        .padding(.vertical,8)
+                        .background(Color(.systemBlue))
+                        .foregroundColor(Color.white)
+                        .clipShape(Capsule())
+                }
+            }
+            .padding(20)
         }
+        .ignoresSafeArea()
     }
 }
 
