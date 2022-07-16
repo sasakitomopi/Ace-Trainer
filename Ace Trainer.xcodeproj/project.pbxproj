@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE175A552882C77900B89D53 /* ProfileSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE175A542882C77900B89D53 /* ProfileSettingView.swift */; };
+		CE175A572882CC2400B89D53 /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE175A562882CC2400B89D53 /* TextArea.swift */; };
 		CE4A9C20287ABD0F002FD4A7 /* Ace_TrainerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A9C1F287ABD0F002FD4A7 /* Ace_TrainerApp.swift */; };
 		CE4A9C22287ABD0F002FD4A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A9C21287ABD0F002FD4A7 /* ContentView.swift */; };
 		CE4A9C24287ABD11002FD4A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4A9C23287ABD11002FD4A7 /* Assets.xcassets */; };
@@ -15,9 +17,12 @@
 		CE4A9C3A287AC553002FD4A7 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A9C39287AC553002FD4A7 /* AuthHeaderView.swift */; };
 		CE4A9C3D287AC7A5002FD4A7 /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A9C3C287AC7A5002FD4A7 /* RoundedShape.swift */; };
 		CE4A9C3F287ACF8A002FD4A7 /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A9C3E287ACF8A002FD4A7 /* CustomInputField.swift */; };
+		CE8FC48B287B9441007C7E57 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8FC48A287B9441007C7E57 /* RegistrationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE175A542882C77900B89D53 /* ProfileSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingView.swift; sourceTree = "<group>"; };
+		CE175A562882CC2400B89D53 /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
 		CE4A9C1C287ABD0F002FD4A7 /* Ace Trainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ace Trainer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4A9C1F287ABD0F002FD4A7 /* Ace_TrainerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ace_TrainerApp.swift; sourceTree = "<group>"; };
 		CE4A9C21287ABD0F002FD4A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,6 +32,7 @@
 		CE4A9C39287AC553002FD4A7 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
 		CE4A9C3C287AC7A5002FD4A7 /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
 		CE4A9C3E287ACF8A002FD4A7 /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
+		CE8FC48A287B9441007C7E57 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				CE4A9C37287ABE33002FD4A7 /* LoginView.swift */,
+				CE8FC48A287B9441007C7E57 /* RegistrationView.swift */,
+				CE175A542882C77900B89D53 /* ProfileSettingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -131,6 +139,7 @@
 			children = (
 				CE4A9C3C287AC7A5002FD4A7 /* RoundedShape.swift */,
 				CE4A9C3E287ACF8A002FD4A7 /* CustomInputField.swift */,
+				CE175A562882CC2400B89D53 /* TextArea.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -208,8 +217,11 @@
 				CE4A9C3D287AC7A5002FD4A7 /* RoundedShape.swift in Sources */,
 				CE4A9C38287ABE33002FD4A7 /* LoginView.swift in Sources */,
 				CE4A9C3A287AC553002FD4A7 /* AuthHeaderView.swift in Sources */,
+				CE8FC48B287B9441007C7E57 /* RegistrationView.swift in Sources */,
 				CE4A9C22287ABD0F002FD4A7 /* ContentView.swift in Sources */,
+				CE175A552882C77900B89D53 /* ProfileSettingView.swift in Sources */,
 				CE4A9C3F287ACF8A002FD4A7 /* CustomInputField.swift in Sources */,
+				CE175A572882CC2400B89D53 /* TextArea.swift in Sources */,
 				CE4A9C20287ABD0F002FD4A7 /* Ace_TrainerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
