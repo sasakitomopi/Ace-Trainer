@@ -11,7 +11,9 @@ import SwiftUI
 struct Ace_TrainerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView{
+                ContentView()
+            }
         }
     }
 }
