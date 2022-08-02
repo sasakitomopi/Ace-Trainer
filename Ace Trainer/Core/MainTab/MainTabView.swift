@@ -16,31 +16,31 @@ struct MainTabView: View {
                     self.selectedIndex = 0
                 }
                 .tabItem {
-                    Image(systemName: "house")
+                    Image(systemName: "magnifyingglass")
                 }.tag(0)
             
-            ExploreView()
+            NotificationView()
                 .onTapGesture {
                     self.selectedIndex = 1
                 }
                 .tabItem {
-                    Image(systemName: "magnifyingglass")
+                    Image(systemName: "bell")
                 }.tag(1)
             
-            NotificationView()
+            MessageView()
                 .onTapGesture {
                     self.selectedIndex = 2
                 }
                 .tabItem {
-                    Image(systemName: "bell")
+                    Image(systemName: "envelope")
                 }.tag(2)
             
-            MessageView()
+            ProfileView()
                 .onTapGesture {
                     self.selectedIndex = 3
                 }
                 .tabItem {
-                    Image(systemName: "envelope")
+                    Image(systemName: "person")
                 }.tag(3)
         }
     }
